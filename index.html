@@ -5,15 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Quiz</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <h1>JS Quiz</h1>
-    <p>Take the JS Quiz! You will have 10 seconds to answer each question. 
+    <header id="header">
+        <h1>JS Quiz</h1>
+        <p>Take the JS Quiz! You will have 10 seconds to answer each question. 
         The quiz consists of 5 questions. Click the button below to start!
-    </p>
-    <input type="button" value="Start the Quiz!">
-    <div></div>
+         </p>
+    <input id="startbutton" type="button" value="Start the Quiz!">
+    </header>
+    <label>Time: <span id="time"></span></label>
+    <div class="hide" id="questions">
+        <h2 id="question1"></h2>
+        <div id="c1"></div>
+        <div id="c2"></div>
+        <div id="c3"></div>
+        <div id="c4"></div>
+    </div>
+    <div id="initinp" class="hide"></div>
+    <div id="hiscore" class="hide"></div>
 </body>
-
+<script src="script.js"></script>
 </html>
